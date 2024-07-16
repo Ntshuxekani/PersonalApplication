@@ -12,6 +12,8 @@ import { LoginComponent } from './Component/login/login.component';
 import { SearchComponent } from './Component/search/search.component';
 import { RegisterComponent } from './Component/register/register.component';
 import { NavbarComponent } from './Component/navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { NavbarComponent } from './Component/navbar/navbar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
